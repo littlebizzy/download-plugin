@@ -24,12 +24,12 @@ if (!is_admin() || (defined('DOING_AJAX') && DOING_AJAX))
 	return;
 
 // Check download request
-if (!empty($_GET['dwnplg'])) {
-	//require_once(DWNPLG_PATH.'/download.php');
-	//DWNPLG_Download::instance();
+if (!empty($_GET['dwnplg_plugin']) && !empty($_GET['dwnplg_nonce'])) {
+	require_once(DWNPLG_PATH.'/core/download.php');
+	DWNPLG_Core_Download::instance();
 
 // Plugins page
 } elseif (false !== strpos($_SERVER['REQUEST_URI'], '/wp-admin/plugins.php')) {
-	//require_once(DWNPLG_PATH.'/plugins.php');
-	//DWNPLG_Plugins::instance();
+	require_once(DWNPLG_PATH.'/core/plugins.php');
+	DWNPLG_Core_Plugins::instance();
 }
