@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Download Plugin LittleBizzy
-Plugin URI: https://www.littlebizzy.com
+Plugin Name: Download Plugin
+Plugin URI: https://www.littlebizzy.com/plugins/download-plugin
 Description: Quickly and easily download a ZIP file of any plugin currently installed on your WordPress website without requiring SFTP info or fancy dependencies.
-Version: 1.0
+Version: 1.0.0
 Author: LittleBizzy
 Author URI: https://www.littlebizzy.com
 License: GPL3
