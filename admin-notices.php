@@ -6,7 +6,7 @@
  * @package WordPress
  * @subpackage Admin Notices
  */
-final class DLPLGN_Admin_Notices {
+final class DWNPLG_Admin_Notices {
 
 
 
