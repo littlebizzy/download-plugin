@@ -3,21 +3,26 @@
 Plugin Name: Download Plugin
 Plugin URI: https://www.littlebizzy.com/plugins/download-plugin
 Description: Quickly and easily download a ZIP file of any plugin currently installed on your WordPress website without requiring SFTP info or fancy dependencies.
-Version: 1.0.0
+Version: 1.0.1
 Author: LittleBizzy
 Author URI: https://www.littlebizzy.com
-License: GPL3
+License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Prefix: DWNPLG
 */
 
-// Avoid script calls via plugin URL
+// Admin Notices module
+require_once dirname(__FILE__).'/admin-notices.php';
+DWNPLG_Admin_Notices::instance(__FILE__);
+
+// Block direct calls
 if (!function_exists('add_action'))
 	die;
 
-// This plugin constants
+// Plugin constants
 define('DWNPLG_FILE', __FILE__);
 define('DWNPLG_PATH', dirname(DWNPLG_FILE));
-define('DWNPLG_VERSION', '1.0.0');
+define('DWNPLG_VERSION', '1.0.1');
 
 // Quick context check
 if (!is_admin() || (defined('DOING_AJAX') && DOING_AJAX))
