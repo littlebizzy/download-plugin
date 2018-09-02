@@ -3,7 +3,7 @@
 Plugin Name: Download Plugin
 Plugin URI: https://www.littlebizzy.com/plugins/download-plugin
 Description: Quickly and easily download a ZIP file of any plugin currently installed on your WordPress website without requiring SFTP info or fancy dependencies.
-Version: 1.0.1
+Version: 1.0.2
 Author: LittleBizzy
 Author URI: https://www.littlebizzy.com
 License: GPLv3
@@ -22,7 +22,7 @@ if (!function_exists('add_action'))
 // Plugin constants
 define('DWNPLG_FILE', __FILE__);
 define('DWNPLG_PATH', dirname(DWNPLG_FILE));
-define('DWNPLG_VERSION', '1.0.1');
+define('DWNPLG_VERSION', '1.0.2');
 
 // Quick context check
 if (!is_admin() || (defined('DOING_AJAX') && DOING_AJAX))
