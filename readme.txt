@@ -7,7 +7,7 @@ Requires at least: 4.4
 Tested up to: 4.9
 Requires PHP: 7.0
 Multisite support: No
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Prefix: DWNPLG
@@ -142,12 +142,16 @@ We released this plugin in response to our managed hosting clients asking for be
 
 == Changelog ==
 
+= 1.0.2 =
+* updated plugin meta
+
 = 1.0.1 =
 * tested with WP 4.9
+* added recommended plugins notice
+* added rating request notice
+* added support for `DISABLE_NAG_NOTICES`
 * updated plugin meta
-* added recommended plugins
-* added rating request
-* added support for `define('DISABLE_NAG_NOTICES', true);`
 
 = 1.0.0 =
 * initial release
+* tested with PHP 7.0
