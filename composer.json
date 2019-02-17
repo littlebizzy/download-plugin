@@ -1,0 +1,16 @@
+{
+    "name": "littlebizzy/download-plugin",
+    "type": "wordpress-plugin",
+    "license": "GPLv3",
+    "homepage": "https://www.littlebizzy.com/plugins/download-plugin",
+    "description": "Quickly and easily download a ZIP file of any plugin currently installed on your WordPress website without requiring SFTP info or fancy dependencies.",
+    "keywords": ["wordpress","plugin","download","export","plugins","zip","file","wp admin"],
+    "support": {
+        "issues": "https://github.com/littlebizzy/download-plugin/issues",
+        "forum": "https://www.littlebizzy.com/members"
+    }
+    "require": {
+        "php": "^7.2",
+        "composer/installers": "~1.0"
+    }
+}
